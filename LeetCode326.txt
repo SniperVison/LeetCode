@@ -1,9 +1,9 @@
-
+﻿
 
 /*LeetCode 326. Power of Three  
 Add to List QuestionEditorial Solution  My Submissions
 
-Given an integer, write a function to determine if it is a power of three.
+Given an integer, write a function to determine if it is a power of three. 
 
 Difficulty: Easy
 
