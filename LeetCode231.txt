@@ -1,0 +1,25 @@
+/*LeetCode  231. Power of Two
+Difficulty: Easy
+
+Given an integer, write a function to determine if it is a power of two.
+
+判断一个数n是否是2的次幂只需要，对n&（n-1）进行判断，
+是0则是2的次幂，否则不是
+*/
+
+
+public class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n<=0)
+        return false;
+        else
+        {
+            int flag=n&(n-1);
+        if(flag!=0)
+        return false;
+        else
+        return true;
+        }
+
+    }
+}

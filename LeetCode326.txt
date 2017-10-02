@@ -1,0 +1,20 @@
+
+
+/*LeetCode 326. Power of Three  
+Add to List QuestionEditorial Solution  My Submissions
+
+Given an integer, write a function to determine if it is a power of three.
+
+Difficulty: Easy
+
+Java的int是32位，而3^19刚好是3在int的范围里的最大数
+判断一个数是否为3的次幂，只需用(3^19)%n进行判断
+
+*/
+
+
+public class Solution {
+    public boolean isPowerOfThree(int n) {
+       return(n>0&&1162261467%n==0);
+    }
+}

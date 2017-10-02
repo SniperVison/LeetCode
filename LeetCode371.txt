@@ -1,0 +1,25 @@
+/*LeetCode 371. Sum of Two Integers
+
+Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
+
+Example:
+Given a = 1 and b = 2, return 3.
+
+不用算数运算符求和，只能使用二进制了，异或运算符（^）——能完成两个的二进制相加
+（但是不能进位操作），所以使用与运算（&）判断是否需要进位，然后使用位运算符（<< 或者>>）进行进位或者退位。
+
+
+
+*/
+public class Solution {
+ public int getSum(int a, int b) {
+        if(b==0)
+        return a;
+       return getSum(a^b,(a&b)<<1);
+    }
+}
+
+   
+
+
+
