@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+#查询第二高工资
+#第二种做法，速度慢一些
+#select max(Salary) as SecondHighestSalary from Employee where Salary not in(select max(Salary) from Employee);
+#第一种做法，速度快一些
+#select max(Salary) as SecondHighestSalary from Employee where Salary<(select max(Salary) from Employee);
